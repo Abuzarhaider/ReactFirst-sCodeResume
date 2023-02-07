@@ -1,0 +1,351 @@
+/*--------------------
+    Main Area Project
+    ------------------*/
+    main {
+        cursor: default;
+        padding: 0 50px;
+        color: white;
+    }
+    
+    /* upper text */
+    .projects_title {
+        padding: 30px 0;
+    }
+    
+    .projects_title h1 {
+        font-size: 60px;
+        font-weight: lighter;
+        padding: 8px 0;
+    }
+    
+    .projects_title hr {
+        height: 1px;
+        width: 200px;
+        background-color: #1baba2;
+        border: none;
+    }
+    
+    .projects_title h3 {
+        font-size: 20px;
+    }
+    
+    .projects_title p {
+        margin-top: 20px;
+    }
+    
+    
+    
+    /*---------
+        buttons
+    -------------*/
+    .projects_btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .projects_btn h2 {
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+    
+    .btn ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    .btn {
+        padding: 25px 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .mainBtn li:not(:nth-child(3n)) {
+        margin-right: 10px;
+    
+    }
+    
+    .mainBtn a {
+        text-decoration: none;
+        color: white;
+        border: 1px solid #1baba2;
+        padding: 15px 10px;
+        border-radius: 50px;
+        transition: .2s;
+    }
+    
+    .mainBtn .active {
+        background-color: #1baba2;
+    }
+    
+    .mainBtn a:hover {
+        background-color: #1baba2;
+    }
+    
+    /* subBtn */
+    .subBtn {
+        padding: 20px 0px;
+    }
+    
+    .subBtn li:not(:nth-child(5n)) {
+        margin-right: 3px;
+    }
+    
+    .subBtn a {
+        text-decoration: none;
+        background-color: white;
+        color: #1baba2;
+        padding: 10px 5px;
+        transition: .2s;
+    }
+    
+    .last_subBtn {
+        border-radius: 0 6px 6px 0;
+    }
+    
+    .subBtn a:hover {
+        background-color: #1baba2;
+        color: white;
+    }
+    
+    .subBtn .active {
+        background-color: #1baba2;
+        color: white;
+        border-radius: 6px 0 0 6px;
+    }
+    
+    
+    /*-----------
+     Card styling
+     -------------*/
+    
+    .card_main {
+        cursor: default;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 40px 50px;
+    }
+    
+    .card {
+        width: 375px;
+        padding: 25px;
+        margin: 15px 0;
+        color: white;
+        border-radius: 20px;
+        transition: ease .3s;
+    }
+    .card:hover{
+        transform: translateY(-10px);
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
+    }
+    
+    .card_text h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-weight: lighter;
+    }
+    
+    /* card image */
+    .card_img {
+        padding: 25px 0;
+    }
+    
+    .card_img img {
+        width: 100%;
+        transition: rotate .5s;
+    }
+    
+    .card:hover .card_img>img{
+        rotate: 360deg;
+    }
+    
+    /* Card link */
+    .card_link {
+        text-align: center;
+    }
+    
+    .card_link a {
+        text-decoration: none;
+        color: #1baba2;
+    }
+    .card_link a:hover{
+        color: white;
+        transition: .3s;
+    }
+    
+    /* one */
+    .one {
+        background: hsla(211, 82%, 35%, 1);
+    
+        background: linear-gradient(270deg, hsla(211, 82%, 35%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        background: -moz-linear-gradient(270deg, hsla(211, 82%, 35%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        background: -webkit-linear-gradient(270deg, hsla(211, 82%, 35%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#1058A5", endColorstr="#000000", GradientType=1);
+    }
+    
+    /* two */
+    .two {
+        background: hsla(180, 83%, 40%, 1);
+    
+        background: linear-gradient(270deg, hsla(180, 83%, 40%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        background: -moz-linear-gradient(270deg, hsla(180, 83%, 40%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        background: -webkit-linear-gradient(270deg, hsla(180, 83%, 40%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#11BBBB", endColorstr="#000000", GradientType=1);
+    }
+    
+    /* three */
+    .three {
+        background: hsla(272, 65%, 37%, 1);
+    
+        background: linear-gradient(270deg, hsla(272, 65%, 37%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        background: -moz-linear-gradient(270deg, hsla(272, 65%, 37%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        background: -webkit-linear-gradient(270deg, hsla(272, 65%, 37%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#62219B", endColorstr="#000000", GradientType=1);
+    }
+    
+    /* four */
+    .four {
+        background: hsla(0, 79%, 72%, 1);
+    
+        background: linear-gradient(270deg, hsla(0, 79%, 72%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        background: -moz-linear-gradient(270deg, hsla(0, 79%, 72%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        background: -webkit-linear-gradient(270deg, hsla(0, 79%, 72%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F08080", endColorstr="#000000", GradientType=1);
+    }
+    
+    /* five */
+    .five {
+        background: hsla(52, 67%, 49%, 1);
+    
+        background: linear-gradient(270deg, hsla(52, 67%, 49%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        background: -moz-linear-gradient(270deg, hsla(52, 67%, 49%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        background: -webkit-linear-gradient(270deg, hsla(52, 67%, 49%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#D1BB29", endColorstr="#000000", GradientType=1);
+    }
+    
+    /* six */
+    .six {
+        background: hsla(138, 39%, 52%, 1);
+    
+        background: linear-gradient(270deg, hsla(138, 39%, 52%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        background: -moz-linear-gradient(270deg, hsla(138, 39%, 52%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        background: -webkit-linear-gradient(270deg, hsla(138, 39%, 52%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#56B572", endColorstr="#000000", GradientType=1);
+    }
+
+
+    /* RESPONSIVENESS */
+
+@media only screen and (max-width:768px){
+    /* main */
+    main {
+        padding: 0 30px;
+    }
+
+    /* upper text */
+
+    .projects_title {
+        padding: 50px 0;
+    }
+
+    .projects_title h1 {
+        font-size: 50px;
+    }
+
+
+    /* buttons */
+    .projects_btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects_btn h2 {
+        margin-bottom: 0;
+        margin: 20px 0;
+    }
+
+    .btn {
+        padding: 15px 0;
+    }
+
+    .btn ul {
+        height: 115px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    .btn li {
+        height: fit-content;
+    }
+
+    .mainBtn li:not(:nth-child(3n)) {
+        margin-right: 10px;
+
+    }
+
+    .mainBtn a {
+        padding: 12px 5px;
+    }
+
+
+    /* subBtn */
+    .subBtn {
+        padding: 0px 0px;
+    }
+
+    .subBtn li:not(:nth-child(5n)) {
+        margin-right: 10px;
+    }
+
+    .subBtn a {
+        padding: 10px 5px;
+        border-radius: 5px;
+    }
+
+    .last_subBtn {
+        border-radius: 5px;
+    }
+
+    .subBtn .active {
+        background-color: #1baba2;
+        color: white;
+        border-radius: 5px;
+    }
+
+    /* Card styling */
+
+    .card_main {
+        padding: 40px 30px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    /* card image */
+    .card_img {
+        padding: 10px 0;
+    }
+}

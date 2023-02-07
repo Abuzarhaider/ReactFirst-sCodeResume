@@ -1,0 +1,170 @@
+/*----------
+    footer
+----------*/
+footer {
+    background-color: black;
+    color: white;
+    padding: 0 50px;
+    cursor: default;
+
+}
+
+.footer_first {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.data {
+    display: flex;
+    align-items: baseline;
+}
+
+.data i {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #1baba2;
+}
+
+.data p {
+    margin-top: 3px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.404);
+}
+
+/* hr footer */
+footer hr {
+    height: 1px;
+    width: 80vw;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.432);
+    border: none;
+}
+
+
+/* second footer */
+.footer_second {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    width: 200px;
+    padding: 10px;
+}
+
+.info ul {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.list_links li:not(:nth-child(3n)) {
+    margin-bottom: 15px;
+}
+
+.list_links i {
+    margin-right: 5px;
+}
+
+.info h3 {
+    margin-bottom: 5px;
+}
+
+.info a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.404);
+    font-size: 14px;
+}
+
+.info a:hover{
+    color: white;
+    transition: .3s;
+}
+
+.info img {
+    height: 60px;
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.hr {
+    width: 110px;
+    margin: 0;
+    border: none;
+    background-color: #1baba2;
+}
+
+.list_linksTwo li:not(:nth-child(3n)) {
+    margin-bottom: 30px;
+}
+
+.list_linksTwo a {
+    font-size: 20px;
+}
+
+
+/* footer third */
+.footer_third {
+    background-color: #141414;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer_third p {
+    font-size: 14px;
+}
+
+.footer_third a {
+    text-decoration: none;
+    color: #1baba2;
+}
+
+.footer_third a:hover{
+    color: rgba(255, 255, 255, 0.404);
+    transition: .3s;
+}
+
+.marginDiv {
+    margin-right: 40px;
+}
+
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width:768px){
+    /* footer */
+    footer {
+        padding: 0 50px;
+    }
+
+    /* footer first */
+    .footer_first {
+        display: block;
+        padding: 5px 0;
+    }
+
+    .data {
+        margin: 30px 0;
+    }
+
+    .data i {
+        font-size: 20px;
+    }
+
+
+    /* second footer */
+    .footer_second {
+        display: block;
+    }
+
+    .info {
+        width: 100%;
+        margin: 30px 0;
+        padding: 10px 0;
+    }
+}
