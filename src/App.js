@@ -9,6 +9,7 @@ import Services from './Components/Service/Services'
 import Blog from './Components/Blog/Blogs'
 import About from './Components/About/About'
 import Contact from './Components/Contact/Contact'
+import ErrorPage from './Components/ErrorPage';
 
 function App() {
   return (
@@ -16,13 +17,14 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path='/*' element={<Project/>} />
-        <Route exact path='/project' element={<Project/>} />
-        <Route exact path='/home' element={<Home/>} />
-        <Route exact path='/service' element={<Services/>} />
-        <Route exact path='/blog' element={<Blog/>} />
-        <Route exact path='/about' element={<About/>} />
-        <Route exact path='/contact' element={<Contact/>} />
+        <Route exact path='/' element={<Project/>} />
+        <Route path='/project' element={<Project/>} />
+        <Route path='/home' element={<Home/>} />
+        <Route path='/service' element={<Services/>} />
+        <Route path='/blog' element={<Blog/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='*' element={<ErrorPage/>}/>
       </Routes>
       
       <Footer />
